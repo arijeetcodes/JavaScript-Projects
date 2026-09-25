@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    /* to lift up the content */
+    justify-content: center;
+    /* horizontally center the content */
+    align-items: center;
+    height: 100vh;
+    /* vertically center the content */
+}
+
+.qr-container{
+    /* border: 1px solid black; */
+    /* to undestand the scope of element */
+    border-radius: 20px;
+    /* to create a curvy border */
+    padding: 20px;
+    /* to create space around the element */
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* gives shadow to the element box */
+    background-color: white;
+}
+
+h2{
+    text-align: center;
+    /* aligns the text to the center horizontally */
+    margin-bottom: 10px;
+    /* gives a margin of 10px to the bottom of the text */
+}
+
+#qr-input {
+    display: block;
+    /* assigns an entire row to the element */
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    /* increases the font-size of the placeholder */
+    padding: 10px;
+    border-radius: 10px;
+    /* design theory says: outer-radius = inner-radius + padding */
+}
+
+#qr-button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2ecc71;
+    color: white;
+    /* gives text color white */
+}
+
+#qr-img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    /* brings the element to the center */
+}
