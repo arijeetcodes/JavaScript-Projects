@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta
+      name="description"
+      content="A Web Page to Scan and Generate QR Codes"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="QR, Code, Scan, Generate, Scanner, Generator"
+    />
+    <meta name="author" content="Arijeet Mondal" />
+    <title>QR Code Generator & Scanner</title>
+    <link rel="stylesheet" href="qrcgs.css" />
+    <!-- HTML5 QR Code Library CDN -->
+    <script
+      src="https://unpkg.com/html5-qrcode"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <div class="qr-container">
+      <!-- Tab Controls -->
+      <div class="tab-buttons">
+        <button id="gen-tab-btn" class="tab-btn active">Generate QR</button>
+        <button id="scan-tab-btn" class="tab-btn">Scan QR</button>
+      </div>
+
+      <!-- Generator Section -->
+      <div id="generator-section">
+        <h2>QR CODE GENERATOR</h2>
+        <input
+          type="text"
+          id="qr-input"
+          placeholder="Paste Your URL Here or Type It Out"
+        />
+        <button id="qr-button">Click Here To Generate QR Code</button>
+        <img src="" alt="" id="qr-img" />
+      </div>
+
+      <!-- Scanner Section -->
+      <div id="scanner-section" class="hidden">
+        <h2>QR CODE SCANNER</h2>
+        <div id="reader"></div>
+        <div id="scan-result">Scanned Result Will Appear Here...</div>
+      </div>
+    </div>
+
+    <script src="qrcgs.js"></script>
+  </body>
+</html>

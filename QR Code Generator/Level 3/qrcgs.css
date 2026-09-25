@@ -1,0 +1,142 @@
+* {
+  /* CSS Boiler Plate */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  /* gives background a nice warm color */
+  display: flex;
+  /* forces the elements in one line */
+  justify-content: center;
+  /* aligns the element to the center of horizontal line */
+  align-items: center;
+  height: 100vh;
+  /* aligns the element to the center of the vertical line */
+  /* padding: 20px; */
+}
+
+.qr-container {
+  /* border: 1px solid black; */
+  /* gives a scope for the adjustment of the element, later to be removed */
+  border-radius: 20px;
+  /* design theory says: outer-radius = inner-radius + inner-padding */
+  padding: 20px;
+  /* gives a padding of 20px around the div elements */
+  width: 500px;
+  /* gives a width of 500px to the entire box */
+  box-shadow: 0 0 25px rgba(152, 0, 2, 1);
+  /* adds a shadow to the box to give a 3D effect */
+  background-color: black;
+  /* gives white color to the box */
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 20px;
+  /* creates a gap between the two buttons */
+  margin-bottom: 20px;
+  /* gives a margin of 20px to the bottom of the buttons */
+}
+
+.tab-btn {
+  flex: 1;
+  /* stretches the buttons in the enitre row */
+  padding: 10px;
+  /* gives a padding of 10px around the button text */
+  border: none;
+  /* removes the border line */
+  border-radius: 10px;
+  /* gives a border-curve of 10px */
+  color: #980002;
+  background-color: black;
+  box-shadow: 0 0 10px rgba(152, 0, 2, 1);
+  /* gives a grey color to the buttons when inactive */
+  cursor: pointer;
+  /* turns the cursor into pointer when hovered */
+  font-size: 1rem;
+  /* increases the font size of button text */
+  font-weight: bold;
+  /* thickens the button text */
+  transition: background-color 0.3s;
+  /* transition to green color when clicked */
+}
+
+.tab-btn.active {
+  background-color: #980002;
+  /* color of the active button */
+  color: white;
+  /* color of the text of the active button */
+}
+
+.hidden {
+  display: none;
+  /* hides the inactive section */
+}
+
+h2 {
+  text-align: center;
+  /* aligns the text to the center of the row */
+  margin-bottom: 15px;
+  color: #980002;
+}
+
+#qr-input {
+  display: block;
+  /* gives the entire row to the input element */
+  margin-bottom: 10px;
+  width: 100%;
+  /* gives the entire width of the row to the input element */
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  /* eases the pixelated border */
+}
+
+#qr-button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px;
+  border: none;
+  /* removes the solid border */
+  border-radius: 10px;
+  background-color: #980002;
+  color: white;
+  cursor: pointer;
+}
+
+#qr-img {
+  display: block;
+  width: 50%;
+  margin: 15px auto 0;
+  /* gives 15px margin to top, auto to left-right (placing it in the center) and 0 to bottom */
+}
+
+#reader {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* Crucial for media containers. The html5-qrcode library injects a raw <video> or <canvas> element inside #reader. Without overflow: hidden, the square video corners would bleed outside the container and ignore the 10px border-radius. */
+  background-color: white;
+  font-size: 1.2rem;
+}
+
+#scan-result {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  word-break: break-all;
+  /* Essential for QR codes. QR codes often encode long URLs without spaces. Without this property, long links would overflow out of the box boundaries and break the container layout. This forces long links to wrap onto new lines. */
+  padding: 10px;
+  background-color: #980002;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+}
