@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* boiler plate of the CSS */
+}
+
+body {
+  background-color: antiquewhite;
+  /* adds a backgroud color to the webpage*/
+  display: flex;
+  /* forces everything into one corner */
+  justify-content: center;
+  /* horizontal center of the row */
+  align-items: center;
+  /* vertical center of the row */
+  height: 100vh;
+  /* vh - viewport height, where 1vh equals 1% of the total height of the visible browser window */
+}
+
+#password {
+  width: 300px;
+  /* increases the width of the input field */
+  padding: 10px;
+  /* gives padding arround the text in the input field */
+  font-size: 1.5rem;
+  /* increases the font-size of the text of the input field */
+  background-color: antiquewhite;
+  /* gives a color to the input field */
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#password:focus {
+  outline: none;
+  /* prevent any changes on focus, may vary browser to browser */
+}
