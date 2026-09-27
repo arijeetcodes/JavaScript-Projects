@@ -1,0 +1,50 @@
+* {
+  /* CSS Boiler Plate */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  /* forces all inline elements in one line */
+  justify-content: center;
+  /* aligns all elements to row's horizontal center */
+  align-items: center;
+  /* aligns all elements to row's vertical center */
+  height: 100vh;
+  /* gives the row the entire height of the webpage */
+  background-color: #000000;
+  /* gives a background color to the webpage */
+}
+
+.container {
+  cursor: pointer;
+  /* turns the cursor to pointer when placed on container elements */
+}
+
+span {
+  font-size: 10rem;
+  /* increases font-size of the letters */
+  font-weight: bolder;
+  /* makes the letters bolder */
+  color: #00e5ff;
+  /* gives color to the letter */
+  line-height: 1;
+  display: inline-block;
+  /* let each span work individually like a block */
+}
+
+span.active {
+  animation: jump 2s ease-in-out;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0, 0) rotate(180deg);
+  }
+  100% {
+    transform: scale(1.9) translate(0, -125px);
+    /* makes changes as per your taste, FAFO iykyk */
+  }
+}
