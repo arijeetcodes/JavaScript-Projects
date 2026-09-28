@@ -1,0 +1,27 @@
+.gate-con {
+  /* border: 1px solid black; */
+  /* to understand the scope of the elements */
+  border-radius: 10px;
+  /* to give a curve to the border */
+  box-shadow: 0 0 10px 0 black;
+  /* gives a shadow to the box */
+  width: 500px;
+  height: 250px;
+  /* gives height and width to the box */
+  background-color: white;
+  /* give a bg-color to the box */
+}
+
+ul {
+  margin-left:45px;
+  /* gives a margin of 45px to the left */
+}
+
+li {
+  font-size: 1.2rem;
+  /* increases the font size of the options */
+  margin-bottom: 5px;
+  /* gives a margin to the bottom of each options */
+  padding: 5px;
+  /* gives a padding of 5px around every options */
+}

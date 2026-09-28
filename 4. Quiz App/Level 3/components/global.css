@@ -1,0 +1,36 @@
+*{
+    /* CSS boiler plate */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #002147;
+  /* gives a background color to the webpage */
+  display: flex;
+  /* pushes all the elements of their respective rows to one corner */
+  justify-content: center;
+  /* aligns all elements of their respective row to the horizontal center of the row */
+  align-items: center;
+  /* aligns all elements of their respective row to the vertical center of the row */
+  height: 100vh;
+  /* gives the row the height of the entire webpage, 1 vh = 1%, vh = viewport height */
+}
+
+.gbl{
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+    color: #002147;
+}
+
+a {
+    text-decoration: none;
+    color: #d4af37;
+}
+
+a:hover{
+    font-weight: bold;
+    color: #7f171f;
+}
