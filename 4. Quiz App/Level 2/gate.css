@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: #002147;
   /* gives a background color to the webpage */
   display: flex;
   /* pushes all the elements of their respective rows to one corner */
@@ -25,8 +25,8 @@ body {
   /* to give a curve to the border */
   box-shadow: 0 0 10px 0 black;
   /* gives a shadow to the box */
-  width: 500px;
-  height: 350px;
+  width: 800px;
+  height: 400px;
   /* gives height and width to the box */
   background-color: white;
   /* give a bg-color to the box */
@@ -40,6 +40,7 @@ body {
   /* gives a padding og 20px around the question */
   text-align: center;
   /* horizontally-centerize the question */
+  color: #002147;
 }
 
 ul {
@@ -56,6 +57,12 @@ li {
   /* gives a margin to the bottom of each options */
   padding: 5px;
   /* gives a padding of 5px around every options */
+  color: #d4af37;
+}
+
+li:hover {
+  color: #7f171f;
+  font-weight: bold;
 }
 
 .answer {
@@ -63,12 +70,12 @@ li {
 }
 
 #submit {
-  background-color: #f1c40e;
+  background-color: #d4af37;
   /* gives a color to submit button */
   border: none;
   /* removes the border from the button */
-  color: white;
-  /* gives the text white color */
+  color: #7f171f;
+  /* gives the text a color */
   font-size: 1.2rem;
   /* increases the font size of submit text */
   font-weight: bold;
@@ -86,8 +93,10 @@ li {
 }
 
 #submit:hover {
-  background-color: #f39c12;
+  background-color: #7f171f;
   /* changes the button color when hoveres */
+  color: #d4af37;
+  /* changes the font color when hovered */
   cursor: pointer;
   /* turns the cursor into pointer when hovered */
 }
