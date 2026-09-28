@@ -1,0 +1,93 @@
+* {
+  /* CSS boiler plate */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  /* gives a background color to the webpage */
+  display: flex;
+  /* pushes all the elements of their respective rows to one corner */
+  justify-content: center;
+  /* aligns all elements of their respective row to the horizontal center of the row */
+  align-items: center;
+  /* aligns all elements of their respective row to the vertical center of the row */
+  height: 100vh;
+  /* gives the row the height of the entire webpage, 1 vh = 1%, vh = viewport height */
+}
+
+.quiz-container {
+  /* border: 1px solid black; */
+  /* to understand the scope of the elements */
+  border-radius: 10px;
+  /* to give a curve to the border */
+  box-shadow: 0 0 10px 0 black;
+  /* gives a shadow to the box */
+  width: 500px;
+  height: 350px;
+  /* gives height and width to the box */
+  background-color: white;
+  /* give a bg-color to the box */
+  position: relative;
+}
+
+#quiz-question {
+  font-size: 1.8rem;
+  /* increases the font of the question text */
+  padding: 20px;
+  /* gives a padding og 20px around the question */
+  text-align: center;
+  /* horizontally-centerize the question */
+}
+
+ul {
+  list-style: none;
+  /* removes the bullet points */
+  margin-left: 30px;
+  /* gives a margin of 30px to the left */
+}
+
+li {
+  font-size: 1.2rem;
+  /* increases the font size of the options */
+  margin-bottom: 15px;
+  /* gives a margin to the bottom of each options */
+  padding: 5px;
+  /* gives a padding of 5px around every options */
+}
+
+.answer {
+  cursor: pointer;
+}
+
+#submit {
+  background-color: #f1c40e;
+  /* gives a color to submit button */
+  border: none;
+  /* removes the border from the button */
+  color: white;
+  /* gives the text white color */
+  font-size: 1.2rem;
+  /* increases the font size of submit text */
+  font-weight: bold;
+  /* increases the boldness of font */
+  display: block;
+  width: 100%;
+  /* makes the submit button occupy the entire row */
+  position: absolute;
+  bottom: 0;
+  /* places the submit button to the bottom of the container box */
+  padding: 7.5px;
+  /* gives a padding of 7.5px around the submit text */
+  border-radius: 0 0 10px 10px;
+  /* gives curve to the bottom to corners of submit button */
+}
+
+#submit:hover {
+  background-color: #f39c12;
+  /* changes the button color when hoveres */
+  cursor: pointer;
+  /* turns the cursor into pointer when hovered */
+}
